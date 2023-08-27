@@ -10,6 +10,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                echo 'Launching notepad...'
+                start notepad
+                echo 'Notepad launched.'
             }
         }
         stage('Deploy') {
