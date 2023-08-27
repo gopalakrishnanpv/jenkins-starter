@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 echo 'Launching notepad...'
-                notepad
+                cmd 'start notepad'
                 echo 'Notepad launched.'
             }
         }
